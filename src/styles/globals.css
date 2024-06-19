@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -40,4 +40,82 @@
     width: 100%;
     background: -webkit-linear-gradient(to right, #000000, rgb(22, 223, 223)); 
     background: linear-gradient(to right, #000000, rgb(22, 223, 223));
+} */
+
+
+/* globals.css */
+
+/* Ensure base styles are retained */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adjustments for responsiveness */
+/* Example adjustments for responsive navbar */
+.nav {
+    
+    padding: 20px 5%; /* Responsive padding */
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+}
+
+.links li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+/* Example adjustments for responsive hero section */
+.hero {
+    background: -webkit-linear-gradient(to right, #000000, rgb(22, 223, 223)); 
+    background: linear-gradient(to right, #000000, rgb(22, 223, 223));
+    padding: 100px 5%; /* Responsive padding */
+    text-align: center; /* Center align text */
+}
+
+/* Example adjustments for responsive footer */
+.footer {
+    padding: 50px 5%; /* Responsive padding */
+   
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.footer .logo {
+    font-size: 40px;
+    font-family: cursive;
+    color: white;
+}
+
+.footer .address,
+.footer .contact {
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Example adjustments for responsive chatbot section */
+.chatbot-container {
+    height: 90vh;
+    width: 100%;
+    padding: 20px 5%; /* Responsive padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbot-frame {
+    border: 1px solid rgb(22, 223, 223);
+    border-radius: 8px;
+    /* width: 50%; */
+}
+
+.chatbot-frame iframe {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    padding: 20px;
 }
